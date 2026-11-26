@@ -5,71 +5,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Aprendemos Juntos 2030</title>
+
+  <!-- CSS interno: adaptación mobile -->
+  <style>
+    @media only screen and (max-width: 600px) {
+
+      .email-container {
+        width: 100% !important;
+      }
+
+      .mobile-padding {
+        padding: 24px 20px !important;
+      }
+
+      .hero-title {
+        font-size: 32px !important;
+        line-height: 38px !important;
+      }
+
+      .stack-column {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .responsive-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .cta {
+        display: block !important;
+        text-align: center !important;
+      }
+
+    }
+  </style>
 </head>
 
 <body style="margin:0; padding:0; background-color:#F7F8F8;">
 
+  <!-- Preheader oculto -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
+    Reflexiones de Cristina Rivera Garza sobre oficio,
+    incertidumbre y sentido profesional.
+  </div>
+
   <!-- Tabla exterior -->
-  <table role="presentation"
-         width="100%"
-         cellspacing="0"
-         cellpadding="0"
-         border="0"
-         bgcolor="#F7F8F8">
+  <table role="presentation" width="100%" cellspacing="0"
+         cellpadding="0" border="0" bgcolor="#F7F8F8">
 
     <tr>
       <td align="center" style="padding:24px 0;">
 
         <!-- Contenedor principal -->
-        <table role="presentation"
-               width="600"
-               cellspacing="0"
-               cellpadding="0"
-               border="0"
-               bgcolor="#FFFFFF"
+        <table role="presentation" class="email-container"
+               width="600" cellspacing="0" cellpadding="0"
+               border="0" bgcolor="#FFFFFF"
                style="width:100%; max-width:600px;">
 
-          <!-- Header -->
+          <!-- HEADER -->
           <tr>
-            <td style="padding:24px;
+            <td class="mobile-padding"
+                style="padding:24px 32px;
                        font-family:Arial,sans-serif;
-                       color:#001391;
-                       font-size:24px;
-                       font-weight:bold;">
+                       color:#001391;">
 
-              BBVA | Aprendemos Juntos 2030
+              <span style="font-size:28px; font-weight:bold;">
+                BBVA
+              </span>
+
+              <span style="font-size:15px;">
+                &nbsp;|&nbsp; Aprendemos Juntos 2030
+              </span>
 
             </td>
           </tr>
 
-          <!-- Hero editorial -->
+          <!-- HERO EDITORIAL -->
           <tr>
-            <td style="padding:0 32px 32px;">
+            <td class="mobile-padding"
+                style="padding:24px 32px;">
 
               <p style="font-family:Arial,sans-serif;
                         font-size:12px;
-                        color:#001391;">
+                        font-weight:bold;
+                        letter-spacing:1px;
+                        color:#001391;
+                        margin:0 0 16px;">
 
                 LIDERAZGO Y DESARROLLO PROFESIONAL
 
               </p>
 
-              <h1 style="font-family:Georgia,serif;
+              <h1 class="hero-title"
+                  style="font-family:Georgia,serif;
                          font-size:40px;
                          line-height:46px;
                          color:#070E46;
-                         margin:16px 0;">
+                         margin:0 0 16px;">
 
                 El mito del talento innato en el trabajo.
 
               </h1>
 
               <p style="font-family:Arial,sans-serif;
-                        font-size:16px;
-                        line-height:24px;
-                        color:#070E46;">
+                        font-size:18px;
+                        line-height:26px;
+                        color:#070E46;
+                        margin:0;">
 
                 ¿Qué impulsa realmente una carrera profesional?
 
@@ -78,7 +122,485 @@
             </td>
           </tr>
 
+          <!-- IMAGEN PODCAST -->
+          <tr>
+            <td style="padding:0 32px;">
+
+              <!-- Sustituir por URL del video -->
+              <a href="https://www.youtube.com/"
+                 target="_blank"
+                 style="text-decoration:none;">
+
+                <img src="https://placehold.co/1072x604/001391/FFFFFF?text=Cristina+Rivera+Garza"
+                     alt="Ver entrevista con Cristina Rivera Garza"
+                     width="536"
+                     class="responsive-img"
+                     style="display:block;
+                            width:100%;
+                            max-width:536px;
+                            height:auto;
+                            border:0;
+                            border-radius:12px 12px 0 0;">
+
+              </a>
+
+            </td>
+          </tr>
+
+          <!-- ENLACE DE REPRODUCCIÓN -->
+          <tr>
+            <td style="padding:0 32px;">
+
+              <table role="presentation" width="100%"
+                     cellspacing="0" cellpadding="0" border="0">
+
+                <tr>
+                  <td bgcolor="#001391"
+                      style="padding:20px;
+                             border-radius:0 0 12px 12px;">
+
+                    <a href="https://www.youtube.com/"
+                       target="_blank"
+                       style="font-family:Arial,sans-serif;
+                              font-size:16px;
+                              font-weight:bold;
+                              color:#FFFFFF;
+                              text-decoration:none;">
+
+                      &#9654; Ver entrevista completa
+
+                    </a>
+
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- INTRODUCCIÓN -->
+          <tr>
+            <td class="mobile-padding"
+                style="padding:32px;
+                       font-family:Arial,sans-serif;
+                       font-size:16px;
+                       line-height:25px;
+                       color:#070E46;">
+
+              <p style="margin:0 0 20px;">
+                Hola, [Nombre]:
+              </p>
+
+              <p style="margin:0 0 20px;">
+                En el entorno profesional solemos atribuir
+                el éxito a una supuesta "chispa" natural:
+                esa idea de que ciertas personas simplemente
+                nacieron listas para liderar, crear o resolver.
+                Sin embargo, creer en ese mito tiene un costo
+                silencioso: alimenta el síndrome del impostor
+                y frena el desarrollo de quienes sienten que
+                aún no tienen todas las respuestas.
+              </p>
+
+              <p style="margin:0;">
+                En esta conversación de Aprendemos Juntos,
+                la escritora e investigadora Cristina Rivera
+                Garza desmonta la idea del talento innato
+                y propone una mirada mucho más realista y
+                sostenible sobre cómo se construye una
+                trayectoria sólida.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- MATRIZ COMPARATIVA -->
+          <tr>
+            <td class="mobile-padding"
+                style="padding:0 32px 32px;">
+
+              <h2 style="font-family:Georgia,serif;
+                         font-size:28px;
+                         line-height:34px;
+                         color:#070E46;
+                         margin:0 0 24px;">
+
+                Del talento al oficio
+
+              </h2>
+
+              <table width="100%" cellspacing="0"
+                     cellpadding="0" border="0"
+                     style="font-family:Arial,sans-serif;
+                            font-size:14px;
+                            line-height:21px;
+                            color:#070E46;">
+
+                <tr>
+                  <th scope="col" width="50%" align="left"
+                      bgcolor="#E9EDF5"
+                      style="padding:16px;">
+                    Mentalidad fija
+                  </th>
+
+                  <th scope="col" width="50%" align="left"
+                      bgcolor="#001391"
+                      style="padding:16px; color:#FFFFFF;">
+                    Mentalidad de oficio
+                  </th>
+                </tr>
+
+                <tr>
+                  <td bgcolor="#F7F8F8" style="padding:16px;">
+                    Talento innato
+                  </td>
+                  <td bgcolor="#EEF3FF" style="padding:16px;">
+                    Preparación constante
+                  </td>
+                </tr>
+
+                <tr>
+                  <td bgcolor="#F7F8F8" style="padding:16px;">
+                    Necesidad de control
+                  </td>
+                  <td bgcolor="#EEF3FF" style="padding:16px;">
+                    Aceptar la incertidumbre
+                  </td>
+                </tr>
+
+                <tr>
+                  <td bgcolor="#F7F8F8" style="padding:16px;">
+                    Resultados inmediatos
+                  </td>
+                  <td bgcolor="#EEF3FF" style="padding:16px;">
+                    Procesos sostenibles
+                  </td>
+                </tr>
+
+                <tr>
+                  <td bgcolor="#F7F8F8" style="padding:16px;">
+                    Tener las respuestas
+                  </td>
+                  <td bgcolor="#EEF3FF" style="padding:16px;">
+                    Escucha activa
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- CONTENIDO EDITORIAL -->
+          <tr>
+            <td class="mobile-padding"
+                style="padding:0 32px 32px;
+                       font-family:Arial,sans-serif;
+                       color:#070E46;
+                       font-size:16px;
+                       line-height:25px;">
+
+              <h2 style="font-family:Georgia,serif;
+                         font-size:28px;
+                         line-height:34px;
+                         margin:0 0 20px;">
+
+                Cuatro claves para repensar el trabajo
+
+              </h2>
+
+              <p style="margin:0 0 24px;">
+                A lo largo de la charla, encontrarás claves
+                muy valiosas para repensar tu forma de
+                trabajar y liderar:
+              </p>
+
+              <p style="color:#0C6DFF;
+                        font-size:28px;
+                        font-weight:bold;
+                        margin:0 0 8px;">01</p>
+
+              <h3 style="font-size:18px; margin:0 0 8px;">
+                Oficio por encima del "don"
+              </h3>
+
+              <p style="margin:0 0 24px;">
+                Por qué la preparación constante, el método
+                y las condiciones reales pesan más que
+                una habilidad espontánea.
+              </p>
+
+              <p style="color:#0C6DFF;
+                        font-size:28px;
+                        font-weight:bold;
+                        margin:0 0 8px;">02</p>
+
+              <h3 style="font-size:18px; margin:0 0 8px;">
+                Liderar sin la ansiedad del control
+              </h3>
+
+              <p style="margin:0 0 24px;">
+                Cómo aceptar la incertidumbre permite tomar
+                mejores decisiones y abrir espacio a ideas
+                verdaderamente innovadoras.
+              </p>
+
+              <p style="color:#0C6DFF;
+                        font-size:28px;
+                        font-weight:bold;
+                        margin:0 0 8px;">03</p>
+
+              <h3 style="font-size:18px; margin:0 0 8px;">
+                Sostener el ritmo en culturas de inmediatez
+              </h3>
+
+              <p style="margin:0 0 24px;">
+                Estrategias mentales para mantener la
+                motivación en proyectos de largo aliento,
+                donde los resultados no son instantáneos.
+              </p>
+
+              <p style="color:#0C6DFF;
+                        font-size:28px;
+                        font-weight:bold;
+                        margin:0 0 8px;">04</p>
+
+              <h3 style="font-size:18px; margin:0 0 8px;">
+                Escucha activa frente a la verticalidad
+              </h3>
+
+              <p style="margin:0 0 32px;">
+                Por qué los equipos y proyectos crecen más
+                cuando pasamos de "tener siempre la respuesta"
+                a escuchar con atención real.
+              </p>
+
+              <p style="margin:0;">
+                Más que una charla sobre literatura, es una
+                invitación a revisar cómo habitamos nuestro
+                trabajo, cómo gestionamos la exigencia y
+                qué necesitamos para seguir creciendo
+                sin desgastarnos.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- CTA PRINCIPAL -->
+          <tr>
+            <td align="center" style="padding:0 32px 32px;">
+
+              <table role="presentation" cellspacing="0"
+                     cellpadding="0" border="0">
+
+                <tr>
+                  <td align="center" bgcolor="#001391"
+                      style="border-radius:8px;">
+
+                    <a class="cta"
+                       href="https://www.youtube.com/"
+                       target="_blank"
+                       style="display:inline-block;
+                              padding:16px 28px;
+                              font-family:Arial,sans-serif;
+                              font-size:16px;
+                              line-height:22px;
+                              font-weight:bold;
+                              color:#FFFFFF;
+                              text-decoration:none;">
+
+                      Escucha la entrevista completa &#8594;
+
+                    </a>
+
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- FIRMA -->
+          <tr>
+            <td class="mobile-padding"
+                style="padding:0 32px 32px;
+                       font-family:Arial,sans-serif;
+                       font-size:16px;
+                       line-height:24px;
+                       color:#070E46;">
+
+              Un saludo,<br>
+              <strong>Equipo Aprendemos Juntos 2030</strong>
+
+            </td>
+          </tr>
+
+          <!-- BANNER BECAS -->
+          <tr>
+            <td style="padding:0 32px 32px;">
+
+              <table role="presentation" width="100%"
+                     cellspacing="0" cellpadding="0"
+                     border="0" bgcolor="#001391"
+                     style="border-radius:12px;">
+
+                <tr>
+                  <td style="padding:24px;">
+
+                    <img src="https://placehold.co/976x480/EEF3FF/001391?text=Becas+y+Educacion"
+                         width="488"
+                         alt="Programas de becas educativas"
+                         style="display:block;
+                                width:100%;
+                                height:auto;
+                                border:0;
+                                border-radius:8px;">
+
+                    <p style="font-family:Arial,sans-serif;
+                              font-size:12px;
+                              color:#FFFFFF;
+                              letter-spacing:1px;
+                              margin:24px 0 12px;">
+
+                      EDUCACIÓN Y OPORTUNIDADES
+
+                    </p>
+
+                    <h2 style="font-family:Georgia,serif;
+                               font-size:28px;
+                               line-height:34px;
+                               color:#FFFFFF;
+                               margin:0 0 16px;">
+
+                      El futuro comienza con una oportunidad.
+
+                    </h2>
+
+                    <p style="font-family:Arial,sans-serif;
+                              font-size:16px;
+                              line-height:24px;
+                              color:#FFFFFF;
+                              margin:0 0 24px;">
+
+                      Conoce los programas de becas y
+                      apoyo educativo.
+
+                    </p>
+
+                    <a href="https://www.bbva.mx/"
+                       target="_blank"
+                       style="display:inline-block;
+                              padding:14px 24px;
+                              background-color:#FFFFFF;
+                              border-radius:6px;
+                              font-family:Arial,sans-serif;
+                              font-size:16px;
+                              font-weight:bold;
+                              color:#001391;
+                              text-decoration:none;">
+
+                      Conoce las becas &#8594;
+
+                    </a>
+
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td align="center" bgcolor="#F7F8F8"
+                style="padding:32px 16px;
+                       font-family:Arial,sans-serif;
+                       color:#070E46;">
+
+              <p style="font-size:18px;
+                        font-weight:bold;
+                        margin:0 0 24px;">
+
+                Sigamos aprendiendo juntos
+
+              </p>
+
+              <!-- Redes sociales -->
+              <table role="presentation" cellspacing="0"
+                     cellpadding="0" border="0">
+
+                <tr>
+
+                  <td style="padding:0 8px;">
+                    <a href="https://www.instagram.com/"
+                       target="_blank">
+                      <img src="https://placehold.co/64x64/001391/FFFFFF?text=IG"
+                           alt="Instagram"
+                           width="32" height="32"
+                           style="display:block; border:0;">
+                    </a>
+                  </td>
+
+                  <td style="padding:0 8px;">
+                    <a href="https://www.facebook.com/"
+                       target="_blank">
+                      <img src="https://placehold.co/64x64/001391/FFFFFF?text=FB"
+                           alt="Facebook"
+                           width="32" height="32"
+                           style="display:block; border:0;">
+                    </a>
+                  </td>
+
+                  <td style="padding:0 8px;">
+                    <a href="https://www.tiktok.com/"
+                       target="_blank">
+                      <img src="https://placehold.co/64x64/001391/FFFFFF?text=TK"
+                           alt="TikTok"
+                           width="32" height="32"
+                           style="display:block; border:0;">
+                    </a>
+                  </td>
+
+                  <td style="padding:0 8px;">
+                    <a href="https://www.youtube.com/"
+                       target="_blank">
+                      <img src="https://placehold.co/64x64/001391/FFFFFF?text=YT"
+                           alt="YouTube"
+                           width="32" height="32"
+                           style="display:block; border:0;">
+                    </a>
+                  </td>
+
+                </tr>
+
+              </table>
+
+              <p style="font-size:12px;
+                        line-height:18px;
+                        margin:24px 0 12px;">
+
+                Aviso de privacidad · Cancelar suscripción
+
+              </p>
+
+              <p style="font-size:12px;
+                        line-height:18px;
+                        margin:0;">
+
+                Proyecto conceptual de Email Marketing.<br>
+                Ejercicio académico no afiliado a BBVA.<br>
+                Email Marketing Lab · 2026
+
+              </p>
+
+            </td>
+          </tr>
+
         </table>
+        <!-- Fin del contenedor principal -->
 
       </td>
     </tr>
